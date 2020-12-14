@@ -1,15 +1,19 @@
 <h2>Hall of Famers</h2>
 <ul class="players">
-    <li *ngFor="let player of players" (click)="onSelect(player)"
+    <li 
+      *ngFor="let player of players"
       [class.selected]="player === selectedPlayer"
-      (click)="onSelect(player)">
-        <span class="badge">{{player.number}}</span>
+      (click)="onSelect(player)"
+      >
+        <span class="badge">{{ player.number }}</span>
         {{player.name}} 
   </li>
 </ul>
 
-<div *ngIf="selectedPlayer">
+<app-player-detail [player]="selectedPlayer"></app-player-detail>
 
+<!-- <div *ngIf="selectedPlayer">
+ng
   <h2>{{selectedPlayer.name | uppercase}} Details</h2>
   <div><span>Jersey Number: </span>{{selectedPlayer.number}}</div>
   <div>
@@ -25,6 +29,6 @@
     <br><label>APG:
       <input [(ngModel)]="selectedPlayer.APG" placeholder="APG"/>
     </label>
-  </div>
+  </div> -->
 
-</div>
+<!-- </div> -->

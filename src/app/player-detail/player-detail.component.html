@@ -1,0 +1,21 @@
+<div *ngIf="player">
+
+    <h2>{{player.name | uppercase}} Details</h2>
+    <div><span>Jersey Number:</span>{{player.number}}</div>
+    <div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="player.name" placeholder="Name"/>
+      </label>
+      <br><label>PPG:
+        <input [(ngModel)]="player.PPG" placeholder="PPG"/>
+      </label>
+      <br><label>RPG:
+        <input [(ngModel)]="player.RPG" placeholder="RPG"/>
+      </label>
+      <br><label>APG:
+        <input [(ngModel)]="player.APG" placeholder="APG"/>
+      </label>
+    </div>
+</div>
+</div>
