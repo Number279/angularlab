@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { PlayersComponent } from './players/players.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PlayerDetailComponent } from './player-detail/player-detail.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PlayerDetailComponent } from './player-detail/player-detail.component';
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
